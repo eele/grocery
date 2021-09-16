@@ -20,7 +20,7 @@ public class LambdaTest {
         lambda.run();
     }
 
-    public void insStr() { // 闭包形式包含自由变量情况 生成的lambda方法必须为非静态方法
+    public void insStr() { // 闭包形式包含非静态自由变量情况 生成的lambda方法必须为非静态方法
         doSomething(() -> System.out.println(insStr));
     }
 
